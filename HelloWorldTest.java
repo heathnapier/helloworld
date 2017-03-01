@@ -1,31 +1,13 @@
-import static org.junit.Assert.*;
-
-import org.junit.Before;
 import org.junit.Test;
+import static org.junit.Assert.assertEquals;
 
-
-public class HelloWorldTest {
-
-   private HelloWorld h;
+public class TestJunit {
 	
-   @Before
-   public void setUp() throws Exception 
-   {
-      h = new HelloWorld();
-   }
+   String message = "Hello World";	
+   MessageUtil messageUtil = new MessageUtil(message);
 
    @Test
-   public void testHelloEmpty() 
-   {
-      assertEquals(h.getName(),"");
-      assertEquals(h.getMessage(),"Hello!");
-   }
-	
-   @Test
-   public void testHelloWorld() 
-   {
-      h.setName("World");
-      assertEquals(h.getName(),"World");
-      assertEquals(h.getMessage(),"Hello World!");
+   public void testPrintMessage() {
+      assertEquals(message,messageUtil.printMessage());
    }
 }
