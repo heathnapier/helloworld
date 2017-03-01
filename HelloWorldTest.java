@@ -4,7 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 
-public class TestHelloWorld {
+public class HelloWorldTest {
 
    private HelloWorld h;
 	
