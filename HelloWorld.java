@@ -1,28 +1,8 @@
-public class HelloWorld 
-{
-	
-   private String name = "";
+public class HelloWorld {
 
-   public String getName() 
-   {
-      return name;
-   }
+	public static void main(String[] args) {
+		System.out.println("Hello World");
 
-   public String getMessage() 
-   {
-      if (name == "") 
-      {
-         return "Hello!";
-      }
-      else 
-      {
-         return "Hello " + name + "!";
-      }
-   }
+	}
 
-   public void setName(String name) 
-   {
-      this.name = name;
-   }
-		
 }
