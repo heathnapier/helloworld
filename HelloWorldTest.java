@@ -1,7 +1,7 @@
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
-public class TestJunit {
+public class HelloWorldTest {
 	
    String message = "Hello World";	
    MessageUtil messageUtil = new MessageUtil(message);
